@@ -1,20 +1,20 @@
 :root {
-  --bg-main: #f7f9fc;
-  --bg-soft: #eef6f7;
-  --bg-deep: #12355b;
+--bg-main: #fafbfd;
+--bg-soft: #edf2f8;
+  --bg-deep: #042351;
 
-  --primary: #24527a;
-  --primary-dark: #173b5c;
-  --accent: #3f9ca6;
+  --primary: #1d3f78;
+  --primary-dark: #042351;
+  --accent: #5277a9;
 
   --text-dark: #1f2937;
-  --text-muted: #64748b;
+  --text-muted: #5a7499;
 
-  --border: #d9e2ec;
+  --border: #dde4ee;
   --white: #ffffff;
 
   --radius: 18px;
-  --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow: 0 12px 30px rgba(4, 35, 81, 0.06);
 }
 
 * {
@@ -61,32 +61,39 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 11px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 800;
+  gap: 14px;
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  box-shadow: var(--shadow);
+  width: 49px;
+  height: 49px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.brand-text {
-  font-size: 21px;
-  color: var(--primary-dark);
-  letter-spacing: -0.2px;
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-title {
+  height: 37px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -148,7 +155,7 @@ a {
 .hero {
   padding: 82px 0 64px;
   background:
-    radial-gradient(circle at top left, rgba(63, 156, 166, 0.16), transparent 34%),
+    radial-gradient(circle at top left, rgba(54, 83, 146, 0.16), transparent 34%),
     linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
 }
 
@@ -397,13 +404,13 @@ h3 {
 }
 
 @media (max-width: 520px) {
-  .brand-text {
-    font-size: 18px;
+  .brand-mark {
+    width: 36px;
+    height: 36px;
   }
 
-  .brand-mark {
-    width: 38px;
-    height: 38px;
+  .brand-title {
+    height: 24px;
   }
 
   .hero h1 {
