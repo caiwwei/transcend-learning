@@ -404,20 +404,91 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .container {
+    width: min(100% - 30px, 1120px);
+  }
+
+  .nav {
+    padding: 9px 0;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
   .brand-mark {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
 
   .brand-title {
-    height: 24px;
+    height: 19px;
+  }
+
+  .nav-toggle {
+    padding: 7px 11px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 34px 0 30px;
+    background:
+      radial-gradient(circle at top left, rgba(4, 35, 81, 0.04), transparent 48%),
+      linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+  }
+
+  .hero-grid {
+    gap: 24px;
+  }
+
+  .eyebrow {
+    font-size: 10.5px;
+    line-height: 1.55;
+    letter-spacing: 0.045em;
+    margin-bottom: 12px;
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: clamp(31px, 8.8vw, 36px);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+  }
+
+  .lead {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .hero-cta {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .hero-card {
+    padding: 22px;
+  }
+
+  .hero-card h2 {
+    font-size: 26px;
   }
 
   .section {
-    padding: 52px 0;
+    padding: 48px 0;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .tile,
+  .step,
+  .contact-box {
+    padding: 21px;
   }
 }
